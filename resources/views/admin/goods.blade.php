@@ -1,0 +1,732 @@
+@extends('admin.layouts.app')
+@section('content')
+
+<div class="container-fluid p-5 bg-light">
+
+  <h2>На складе</h2>
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Поставщик</th>
+        <th scope="col">Товар</th>
+        <th scope="col">Цена</th>
+        <th scope="col">Лимит</th>
+        <th scope="col">Кол-во</th>
+        <th scope="col">Корзина</th>
+        <th scope="col">Заказано</th>
+        <th scope="col">Создан</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">3933</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi 32GB Space Gray</td>
+        <td>27500.00</td>
+        <td>100</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3934</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi 32GB Silver</td>
+        <td>27500.00</td>
+        <td>100</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3935</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi 32GB Gold</td>
+        <td>27500.00</td>
+        <td>100</td>
+        <td>0</td>
+        <td>3</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3936</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi 128GB Space Gray</td>
+        <td>35600.00</td>
+        <td>100</td>
+        <td>0</td>
+        <td>4</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3937</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi 128GB Silver</td>
+        <td>35600.00</td>
+        <td>100</td>
+        <td>1</td>
+        <td>4</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3938</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi 128GB Gold</td>
+        <td>35600.00</td>
+        <td>100</td>
+        <td>0</td>
+        <td>6</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3939</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi + Cellular 32GB Space Gray</td>
+        <td>38400.00</td>
+        <td>100</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3940</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi + Cellular 32GB Silver</td>
+        <td>38400.00</td>
+        <td>100</td>
+        <td>8</td>
+        <td>0</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3941</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi + Cellular 32GB Gold</td>
+        <td>38400.00</td>
+        <td>100</td>
+        <td>9</td>
+        <td>0</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3942</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi + Cellular 128GB Space Gray</td>
+        <td>46600.00</td>
+        <td>100</td>
+        <td>10</td>
+        <td>0</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3943</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi + Cellular 128GB Silver</td>
+        <td>46600.00</td>
+        <td>100</td>
+        <td>11</td>
+        <td>0</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+      <tr>
+        <th scope="row">3944</th>
+        <td>Наш склад</td>
+        <td>Apple iPad 10.2 Wi-Fi + Cellular 128GB Gold</td>
+        <td>46600.00</td>
+        <td>100</td>
+        <td>8</td>
+        <td>4</td>
+        <td>0</td>
+        <td>23.09.2020, 12:29:36</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="mt-5">Предзаказ</h2>
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Поставщик</th>
+        <th scope="col">Товар</th>
+        <th scope="col">Цена закупки</th>
+        <th scope="col">Цена</th>
+        <th scope="col">Лимит</th>
+        <th scope="col">Кол-во</th>
+        <th scope="col">Корзина</th>
+        <th scope="col">Заказано</th>
+        <th scope="col">Создан</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">3815</th>
+        <td>Джу</td>
+        <td>POCO F2 Pro 6/128GB Neon Blue EU</td>
+        <td></td>
+        <td>39322.50</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3816</th>
+        <td>Джу</td>
+        <td>POCO F2 Pro 6/128GB Electric Purple EU</td>
+        <td></td>
+        <td>39322.50</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3817</th>
+        <td>Джу</td>
+        <td>POCO F2 Pro 6/128GB Phantom White EU</td>
+        <td></td>
+        <td>39322.50</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3818</th>
+        <td>Джу</td>
+        <td>POCO F2 Pro 6/128GB Cyber Gray EU</td>
+        <td></td>
+        <td>39322.50</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3819</th>
+        <td>Джу</td>
+        <td>Mi Note 10 6/128GB Midnight Black EU</td>
+        <td></td>
+        <td>30896.25</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3820</th>
+        <td>Джу</td>
+        <td>Mi Note 10 6/128GB Green EU</td>
+        <td></td>
+        <td>31297.50</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3821</th>
+        <td>Джу</td>
+        <td>Mi Note 10 Lite 6/64GB Midnight Black EU</td>
+        <td></td>
+        <td>23673.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3822</th>
+        <td>Джу</td>
+        <td>Mi Note 10 Lite 6/64GB Nebula Purple EU</td>
+        <td></td>
+        <td>23673.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3823</th>
+        <td>Джу</td>
+        <td>Mi Note 10 Lite 6/128GB Midnight Black EU</td>
+        <td></td>
+        <td>24476.25</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3824</th>
+        <td>Джу</td>
+        <td>Mi Note 10 Lite 6/128GB Glacier White EU</td>
+        <td></td>
+        <td>24476.25</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3825</th>
+        <td>Джу</td>
+        <td>Mi Note 10 Lite 6/128GB Nebula Purple EU</td>
+        <td></td>
+        <td>24476.25</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3826</th>
+        <td>Джу</td>
+        <td>Mi Note 10 Lite 8/128GB Midnight Black EU</td>
+        <td></td>
+        <td>25278.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3827</th>
+        <td>Джу</td>
+        <td>Mi Note 10 Lite 8/128GB Glacier White EU</td>
+        <td></td>
+        <td>25278.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3828</th>
+        <td>Джу</td>
+        <td>Redmi 7A 2/16GB Black EU</td>
+        <td></td>
+        <td>7062.00</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3829</th>
+        <td>Джу</td>
+        <td>Redmi 7A 2/32GB Red EU</td>
+        <td></td>
+        <td>7302.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3830</th>
+        <td>Джу</td>
+        <td>Redmi 7A 2/32GB Blue EU</td>
+        <td></td>
+        <td>7302.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3831</th>
+        <td>Джу</td>
+        <td>Redmi 8A 2/32GB Black EU</td>
+        <td></td>
+        <td>8265.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3832</th>
+        <td>Джу</td>
+        <td>Redmi 8 3/32GB Black EU</td>
+        <td></td>
+        <td>9228.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3833</th>
+        <td>Джу</td>
+        <td>Redmi 8 3/32GB Blue EU</td>
+        <td></td>
+        <td>9228.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3834</th>
+        <td>Джу</td>
+        <td>Redmi 8 3/32GB Red EU</td>
+        <td></td>
+        <td>9228.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3835</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/64GB Moonlight White EU</td>
+        <td></td>
+        <td>12198.00</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3836</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/64GB Black EU</td>
+        <td></td>
+        <td>12037.50</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3837</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/64GB Blue EU</td>
+        <td></td>
+        <td>12037.50</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3838</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/128GB Blue EU</td>
+        <td></td>
+        <td>13080.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3839</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 3/32GB Gray EU</td>
+        <td></td>
+        <td>11475.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3840</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 3/32GB Blue EU</td>
+        <td></td>
+        <td>11475.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3841</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 3/32GB Moonlight White EU</td>
+        <td></td>
+        <td>11475.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3842</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/64GB Blue EU</td>
+        <td></td>
+        <td>12198.00</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3843</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/64GB Gray EU</td>
+        <td></td>
+        <td>12198.00</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3844</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/128GB Moonlight White EU</td>
+        <td></td>
+        <td>13080.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3845</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/128GB Blue EU</td>
+        <td></td>
+        <td>13080.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3846</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 4/128GB Gray EU</td>
+        <td></td>
+        <td>13080.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3847</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 Pro 6/64GB Mineral Grey EU</td>
+        <td></td>
+        <td>15648.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3848</th>
+        <td>Джу</td>
+        <td>Redmi Note 8 Pro 6/128GB Forest Green EU</td>
+        <td></td>
+        <td>16531.50</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3849</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 3/64GB Gray EU</td>
+        <td></td>
+        <td>14043.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3850</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 3/64GB Forest Green EU</td>
+        <td></td>
+        <td>14043.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3851</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 3/64GB White EU</td>
+        <td></td>
+        <td>14043.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3852</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 4/128GB Gray EU</td>
+        <td></td>
+        <td>14846.25</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3853</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 4/128GB White EU</td>
+        <td></td>
+        <td>14846.25</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3854</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 4/128GB Forest Green EU</td>
+        <td></td>
+        <td>14846.25</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3855</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 Pro 6/64GB Interstellar Grey EU</td>
+        <td></td>
+        <td>17895.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3856</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 Pro 6/64GB Tropical Green EU</td>
+        <td></td>
+        <td>17895.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3857</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 Pro 6/64GB Glacier White EU</td>
+        <td></td>
+        <td>17895.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3858</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 Pro 6/128GB Interstellar Grey EU</td>
+        <td></td>
+        <td>18858.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3859</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 Pro 6/128GB Tropical Green EU</td>
+        <td></td>
+        <td>18858.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+      <tr>
+        <th scope="row">3860</th>
+        <td>Джу</td>
+        <td>Redmi Note 9 Pro 6/128GB Glacier White EU</td>
+        <td></td>
+        <td>18858.75</td>
+        <td>100</td>
+        <td>100</td>
+        <td>0</td>
+        <td>0</td>
+        <td>18.09.2020, 08:24:35</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+@endsection
